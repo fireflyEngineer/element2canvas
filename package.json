@@ -1,6 +1,6 @@
 {
   "name": "element2canvas",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a plugin for canvert elements like iamge, text and so on to a canvas or image, screenshot",
   "main": "lib/index.js",
   "scripts": {
@@ -29,16 +29,20 @@
   "homepage": "https://github.com/fireflyEngineer/element2canvas#readme",
   "devDependencies": {
     "@babel/core": "^7.0.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
     "@babel/plugin-transform-runtime": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
-    "babel-preset-stage-2": "^6.24.1",
-    "rollup": "^0.66.0",
-    "rollup-plugin-babel": "^4.0.3",
-    "rollup-plugin-node-resolve": "^3.4.0"
-  },
-  "dependencies": {
     "babel-eslint": "^9.0.0",
     "babel-plugin-external-helpers": "^6.22.0",
-    "babel-plugin-transform-runtime": "^6.23.0"
-  }
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^5.6.0",
+    "rollup": "^0.66.0",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-commonjs": "^9.1.6",
+    "rollup-plugin-eslint": "^5.0.0",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-uglify": "^6.0.0"
+  },
+  "dependencies": {}
 }
