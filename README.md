@@ -11,7 +11,7 @@ or
 ---------------------
 
 ## Usage
-detail in exzample
+[detail in example](https://github.com/fireflyEngineer/element2canvas/tree/master/example/demo)
 ```
   var canvas = new element2canvas(opts)
   canvas.init().then(() => {
