@@ -1,15 +1,15 @@
 import resolve from 'rollup-plugin-node-resolve'
 import babel from 'rollup-plugin-babel'
-import { uglify } from 'rollup-plugin-uglify'
 import commonjs from 'rollup-plugin-commonjs'
+import minify from 'rollup-plugin-babel-minify'
 export default {
   input: 'src/index.js',
   output: [{
-    file: 'lib/index.js',
+    file: 'lib/index.min.js',
     name: 'element2canvas',
-    format: 'umd'
+    format: 'iife'
   }, {
-    file: 'lib/index.esm.js',
+    file: 'lib/index.js',
     format: 'esm'
   }, {
     file: 'lib/index.amd.js',
@@ -19,11 +19,16 @@ export default {
     format: 'cjs'
   }],
   plugins: [
-    resolve(),
+    resolve({
+      jsnext: true,
+      main: true,
+      browser: true,
+    }),
+    commonjs(),
     babel({
       exclude: 'node_modules/**',
       runtimeHelpers: true
     }),
-    commonjs()
+    minify()
   ]
 }
