@@ -1,5 +1,5 @@
 # element2canvas
-[中文版 Chinese](https://github.com/fireflyEngineer/element2canvas/blob/develop/README.cn.md)
+##### [中文版 Chinese](https://github.com/fireflyEngineer/element2canvas/blob/develop/README.cn.md)
 a plugin for canvert elements like iamge, text and so on to a canvas or image, screenshot and so on. It's a little plugin by js and never need to compute DOM properties, so it could have nealy 99% degree of reduction. From the interface It's very convenience.
 
 ---------------------

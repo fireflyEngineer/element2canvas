@@ -1,5 +1,5 @@
 # element2canvas
-[英文版 English](https://github.com/fireflyEngineer/element2canvas)
+##### [英文版 English](https://github.com/fireflyEngineer/element2canvas)
 一个把图片，文本等转成 canvas 合成图片实现截屏的工呢个，这是插件不需要计算DOM属性，也不会出现偏差，所以还原度高达99%+
 
 ---------------------
